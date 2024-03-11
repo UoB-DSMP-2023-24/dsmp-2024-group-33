@@ -1,0 +1,68 @@
+####################1. Transaction Trends Over Time:
+
+Peaks in this plot indicate months with a higher number of active customers, possibly corresponding to seasons, holidays, or special promotions.you might observe spikes during festive seasons or sales events.
+
+	1. identify data distribution in each category.
+		Distribution of monopoly amount in each category - box plots
+	
+		If you observe a vertical straight line above the x-axis in the second plot, it suggests that the distribution of 'monopoly_money_amount' within each 'cluster' category is highly concentrated or even uniform. The values are similar, and there are no significant outliers.
+	
+		If plot are concentrated near the x-axis with a horizontal line, it suggests that the distribution of 'monopoly_money_amount' for each category in the 'cluster' variable is relatively uniform or has low variability. The central line within each cluster represents the median of the 'monopoly_money_amount' values. If the line is near the center of the box, it indicates a roughly symmetric distribution.
+	
+	--based on customer counts
+    2. identify trend for popular spend month (can give more offers in this months) //sudha//
+		active users per month -> count of customers spending every month 
+		
+	3. identify popular category for offers as amount spent doesnt matter
+		active users per category -> count of customers spending in each category
+		
+	4. Top 5 category trend in Customer Segments based on transaction frequency(active users per category )
+
+	--sum of amount -> can offer bank products like credit cards,etc
+	5. identify high value month //sudha//
+		total amount spent in every month -> time series plots 
+	
+	6. identify trends of high value category.
+		time series for each category  total spend in a month 
+	
+=======Theory for reference=======================================	
+If the peaks in the "Number of Active Customers" plot align with the peaks in the "Total Amount Spent" plot, it indicates that the increased number of customers is contributing to higher revenue during those months. This might be an opportunity to leverage marketing strategies, promotions, or product launches during those popular months to maximize revenue.
+
+Conversely, if there are months with high spending but a lower number of active customers, it could suggest that existing customers are making higher-value transactions or that the business is attracting high-value clients. In this case, there may be opportunities to target and retain these high-value customers with tailored promotions or loyalty programs.
+
+==Bank Product Suggestions:
+
+Seasonal Savings Accounts: Introduce savings accounts with seasonal benefits or bonuses tied to peak spending months. This could incentivize customers to save or invest during these periods.
+
+Credit Card Promotions: Offer credit card promotions or reward programs aligned with popular spending months. For example, cashback or bonus rewards for transactions made during festive seasons or special events.
+
+Personalized Offers: Leverage data on high-value months to create personalized offers or discounts for customers, encouraging them to spend more or use additional banking services during those periods.
+
+Investment Products: Introduce investment products with features like automatic contributions during high-value months, helping customers grow their wealth strategically.
+
+
+
+###################2. Transaction Patterns:
+
+Explore the patterns of transactions between different account numbers. Identify frequently occurring pairs and analyze the dynamics of these transactions over time. This could reveal business relationships, regular transactions, or potential anomalies.
+
+
+###################3. Customer Segmentation:
+
+Use the classification label of the to account number to segment customers into different groups. Explore the characteristics and behavior of each segment, such as spending patterns, transaction frequency, or preferred transaction channels.
+
+	1. trend of Top 5 classification in Customer Segments based on transaction frequency
+	2. spending patterns for each Customer Segment - based on monopoly amount
+	3. Top 5 spending categories for each Customer Segment
+
+
+###################4. Customer Lifetime Value (CLV):
+
+Calculate the CLV for different customer segments based on their transaction history. Identify high-value customers and develop strategies to retain and engage them, such as personalized promotions or loyalty programs.
+
+=======Theory for reference=======================================	
+	The CLV (Customer Lifetime Value) calculation considers both the revenue generated and the transaction frequency. It's possible for categories with fewer transactions but higher revenue per transaction to have a higher CLV.
+
+	In this case, the top 5 spending categories based on CLV for cluster 0 (FASHION, SHOES, SUPERMARKET, HOME_SECTION, GAME_SHOP) might have fewer transactions compared to the top 5 based on transaction counts (BAR, CAFE, PUB, RESTAURANT, TAKEAWAY), but the revenue per transaction is higher in the former set, resulting in a higher CLV.
+
+	This difference in top categories highlights the importance of considering both the transaction frequency and revenue when evaluating customer value. It suggests that, for cluster 0, customers in categories like FASHION and SUPERMARKET contribute more to the overall CLV, even if they have fewer transactions compared to categories like BAR and CAFE.  Although BAR has the highest spending and transaction count, other categories (such as FASHION, SHOES, SUPERMARKET, HOME_SECTION, GAME_SHOP) have a higher average revenue per transaction. 
