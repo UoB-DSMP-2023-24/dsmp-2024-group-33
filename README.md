@@ -1,4 +1,4 @@
-<h1 align="center">**Data Science Mini-Project**(EMATM0050)</h1>
+<h1 align="center">Data Science Mini-Project(EMATM0050)</h1>
 
 **Group Number:** 33
 
